@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link} from "react-router-dom";
 import { Button } from "../components/Button";
 import { Heading } from "../components/Heading";
 import { Input } from "../components/Input";
@@ -37,7 +37,8 @@ export default function ForgetPassword() {
               Email Address
             </Input>
           </div>
-          <Button className="w-full mt-7 font-light">Send OTP</Button>
+          <Link to="/otp"> <Button className="w-full mt-7 ">Send OTP</Button></Link>
+         
         </form>
       </div>
     </div>    </>

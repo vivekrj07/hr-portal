@@ -52,7 +52,7 @@ function Home() {
               Forgot Password?
             </Link>
           </div>
-          <Button type="submit" className="w-full mt-7 font-light">Login</Button>
+          <Button type="submit" className="w-full mt-7 ">Login</Button>
         </form>
       </div>
     </div>

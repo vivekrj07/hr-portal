@@ -3,11 +3,11 @@ import { cva } from "class-variance-authority";
 import { twMerge } from "tailwind-merge";
 
 const buttonStyles = cva(
-  "text-white font-poppins inline-flex justify-center items-center gap-2.5 shrink-0 rounded-10p border-0",
+  "text-white font-poppins font-medium inline-flex justify-center items-center gap-2.5 shrink-0 rounded-10p border-0 transition duration-150 ease-in-out",
   {
     variants: {
       variant: {
-        primary: "bg-primary-500",
+        primary: "bg-primary-500 hover:bg-primary-700",
         icon: "",
       },
       size: {
@@ -27,7 +27,7 @@ const buttonStyles = cva(
 export const Button = ({ variant, size, className, ...props }) => {
   return (
     <button
-      {...props}  
+      {...props}
       className={twMerge(buttonStyles({ variant, size }), className)}
     />
   );
